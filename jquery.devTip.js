@@ -17,10 +17,17 @@
                 var img = obj .attr('rel');
 
                 obj .hover(function() {
-                    obj .css('position','relative').prepend('<div class="devTip"><p>'+title+'</p></div>')
+                    obj .css('position','relative').prepend('<div class="devTip"></div>')
                     .removeAttr('title'); 
 
-                    // if has attribute img than add the image field
+// todo if no title but image than single image
+                    // if has title than add p
+                    if( title != null ) {
+                        obj .find('.devTip').prepend('<p>'+title+'</p>');
+                    }
+
+// todo if has title but no image than hide image
+                    // if has img than add the image field
                     if( img != null ) {
                         obj .find('p').prepend('<img src="'+img+'"/>');
                     }
