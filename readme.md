@@ -12,7 +12,7 @@ simple tooltip plugin for jquery
 
 ## 2.0 usage
 $('.test').devTip();
-<a class="test" title="this going to text for the tips" rel="if any images is used attach here in rel, only the url is needed">Hover over me</a>
+    <a class="test" title="this going to text for the tips" rel="if any images is used attach here in rel, only the url is needed">Hover over me</a>
 
 ### options:
 
