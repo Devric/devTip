@@ -31,12 +31,12 @@ eg:
 
 
 ## 3.0 updates
++ 0.0.5  # add viewport recognition, tooltip auto flips if at right edge
 + 0.0.4  # fix if rel == null
 + 0.0.3  # add image support
 + 0.0.2  # convert to plugin
 + 0.0.1  # initialize
 
 ## 4.0 todo
-+ recognise viewport
 + add bottom-right, top-left, top-right stylesheet
 + add thumbnails only tooltip
