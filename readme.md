@@ -17,13 +17,14 @@ $('.test').devTip();
 just add the class to any element such as span, a, div etc.
 
 eg:
+
+
 ```
 <a 
     class="test" 
     title="this going to text for the tips" 
     rel="if any images is used attach here in rel, only the url is needed eg:http://test.com/img.jpg"
 >Hover over me</a>
-
 ```
 
 ### options:
