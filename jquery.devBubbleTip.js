@@ -1,7 +1,7 @@
-// call by $(this).devTip();
+// call by $(this).devBubbleTip();
 (function($){ 
     $.fn.extend({
-        devTip: function(options){
+        devBubbleTip: function(options){
             var defaults = {
                 backgroundColor:'#fff',
                 borderColor:'#eee',
