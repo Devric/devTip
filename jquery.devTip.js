@@ -1,11 +1,12 @@
-// call by $(this).devBubbleTip();
+// call by $(this).devTip();
 (function($){ 
     $.fn.extend({
-        devBubbleTip: function(options){
+        devTip: function(options){
             var defaults = {
                 backgroundColor:'#fff',
                 borderColor:'#eee',
                 width:270,
+                align:'left',
                 devTipPosition:-25
             };
             var options = $.extend(defaults, options);
@@ -38,7 +39,7 @@
                         // add top class for flip to bottom
                         // if this obj located less than current viewport scroll + 300px
                         // top = top, else default on top
-                        if ( obj.position().top < $(window).scrollTop() + 100 ) {
+                        if ( obj.position().top < $(window).scrollTop() + 120 ) {
                             var top = 'bottom';
                         } else {
                             var top = 'top';
@@ -46,7 +47,7 @@
 
                     // add tooltip div
                     obj .css('position','relative')
-                        .prepend('<div class="devTip '+ top + ' ' + flip +'" style="'+flipPosition+'; width:'+o.width+'px"></div>')
+                        .prepend('<div class="devTip '+ top + ' ' + flip +'" style="'+flipPosition+'; width:'+o.width+'px; text-align:'+o.align+'"></div>')
 
                     .removeAttr('title');
 
