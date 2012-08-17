@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title></title>
+        <script>!window.jQuery && document.write('<script src="js/jquery.js"><\/script>')</script>
+        <link rel="stylesheet" type="text/css" href="js/devTip.css" />
+        <style type="text/css" media="screen">
+            * {padding:0; margin:0;}
+            .wrap {
+                width:600px;
+                margin:200px auto 0;
+                border:10px solid #C9FF67;
+                padding:20px;
+                border-radius:20px;
+            }
+
+            a { text-decoration:none; }
+            a, .tip { color:#6bbfdb }
+
+            h1, h2, h3 { color:#6EACC9 }
+            .gigantic { 
+                font-size:90px;
+                font-weight:bold;
+                font-family:helvetica;
+                line-height:67px;
+                color:#89C922;
+            }
+            #forkme { width:300px; position:absolute; top:0; left:0; }
+            .fright { float:right; }
+        </style>
+
+        <script type="text/javascript" src="js/jquery.devBubbleTip.js"></script>
+        <script language="javascript" type="text/javascript">
+            $(document).ready(function() {
+                $('.tip').devBubbleTip();
+            });
+        </script>
+    </head>
+    <body>
+<a href="https://github.com/Devric/devBubbleTip"> <div id="forkme">
+<pre><div class="gigantic">fork me
+on github </div></pre>
+</a> </div>
+        <div class="wrap">
+<span class="tip" title="just testing a up side down one if you don't mind tipping the title">devBubbleTip</span>
+            <h1>devBubbleTip</h1>
+            <p>This simple bubble script allows you to use both text and images, the arrow is using the css border trick instead of images</p>
+            <hr />
+            <br />
+            <br />
+            <h3>Demo</h3>
+            <p>Hover over the <span class="tip" title="hey this is just a tip <a href='#'>check it out</a> <br /> yup second line, from this on just testing the height of this thing and this goes quite high yup indeed lets just go furthur, and maybe to test the float of the element too, if it can float that will be placed into it" rel="img/1.jpg">TIP</span> to see the tips</p>
+            <p class="fright"><strong>minimize browser to the edge of this green box</strong> <a href="#" class="tip" title="something haha">and see this tip flip</a></p>
+            <br />
+            <a href="#" class="tip" title="something haha">This one doesn't have image</a>
+            <br />
+            <br />
+            <br />
+            <h3>Usage</h3>
+            <p>just tell jquery to apply to the class by .devBubbleTip();</p>
+            <br />
+            <br />
+            <br />
+            <h3>Todo & Updates</h3>
+            <p>Check this on github</p>
+        </div>
+    </body>
+</html>
